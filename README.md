@@ -26,7 +26,7 @@ Let's get working on building this thing!
 
 ## Sign up for an API key
 
-Before starting this project, you'll need to go to the [Giphy Developers site](https://developers.giphy.com/) and obtain an api key.
+Before starting this project, you'll need to go to the [Giphy Developers site](https://developers.giphy.com/docs/api/) and obtain an api key.
 
 1.  Create an account and sign in.
 1.  Set up an app by clicking the Create App in the navbar to obtain your beta key.
