@@ -6,15 +6,11 @@ const SearchResults = ({ images }) => {
 		return <h2>No Images Found!</h2>;
 	}
 
-	return (
-		<div className="gallery">
-			{images.map(image =>
-				<div key={image.id} className="gif">
-					<img src={image.url} />
-				</div>
-			)}
-		</div>
-	);
+	return <div className="gallery">
+			{images.map(image => <div key={image.id} className="gif">
+					<img alt="" src={image.images.downsized_large.url} />
+				</div>)}
+		</div>;
 };
 
 export default SearchResults;
