@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#1A330F",
+        "titleBar.activeBackground": "#254815",
+        "titleBar.activeForeground": "#F7FCF5"
+    },
+    "marquee.widgets.npm-stats.packageNames": [
+        "react-giphy-searcher"
+    ]
+}
