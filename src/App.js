@@ -46,7 +46,7 @@ function App() {
 			{/* <SearchHeader lastSearch={lastSearch} /> */}
 			<h1>Giphy Searcher</h1>
 			<SearchForm handleChange={handleChange} handleSubmit={handleSubmit} searchString={searchString} />
-			<SearchResults images = {images} />
+			<SearchResults images={images} />
 		</div>;
 }
 
