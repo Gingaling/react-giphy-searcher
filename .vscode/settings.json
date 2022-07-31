@@ -6,5 +6,8 @@
     },
     "marquee.widgets.npm-stats.packageNames": [
         "react-giphy-searcher"
+    ],
+    "cSpell.words": [
+        "Giphy"
     ]
 }

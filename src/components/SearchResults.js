@@ -1,5 +1,4 @@
 import React from 'react';
-import {images} from '../App.js';
 
 const SearchResults = ({images}) => {
 	// return early if there are no images

@@ -13,24 +13,25 @@ function App() {
 	};
 
 	const [images, setImages] = useState([]);
-	const [ searchString, setSearchString ] = useState([]);
-	const [ lastSearch, setLastSearch ] = useState('');
+	const [ searchString, setSearchString ] = useState('');
+	// const [ lastSearch, setLastSearch ] = useState('');
 
-	useEffect(() => {
-		getImages(searchString);
-	}, []);
-
+	
 	function getImages() {
 		/* Build a URL from the searchOptions object */
 		const url = `${searchOptions.api}${searchOptions.endpoint}?api_key=${searchOptions.key}&q=${searchString} &limit=${searchOptions.limit}&offset=${searchOptions.offset}&rating=${searchOptions.rating}&lang=en`;
-
+		
 		fetch(url)
-			.then(response => response.json())
-			.then(response => {
-				setImages(response.data);
-			})
-			.catch(console.error);
+		.then(response => response.json())
+		.then(response => {
+			setImages(response.data);
+		})
+		.catch(console.error);
 	}
+	
+	useEffect(() => {
+		getImages();
+	}, []);
 
 	function handleChange(event) {
 		setSearchString(event.target.value);
@@ -38,7 +39,7 @@ function App() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-		getImages(searchString);
+		getImages();
 	}
 
 	return <div>
