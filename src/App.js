@@ -24,7 +24,7 @@ function App() {
 		fetch(url)
 		.then(response => response.json())
 		.then(response => {
-			setImages(response.data);
+			setImages(response);
 		})
 		.catch(console.error);
 	}
