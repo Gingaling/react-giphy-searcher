@@ -24,14 +24,14 @@ function App() {
 		fetch(url)
 		.then(response => response.json())
 		.then(response => {
-			setImages(response);
+			setImages(response.data);
 		})
 		.catch(console.error);
 	}
 	
-	useEffect(() => {
-		getImages();
-	}, []);
+	// useEffect(() => {
+	// 	getImages();
+	// }, []);
 
 	function handleChange(event) {
 		setSearchString(event.target.value);

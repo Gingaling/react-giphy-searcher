@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const SearchResults = ({images}) => {
 	// return early if there are no images
 	if (images.length === 0) {
