@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SearchResults = ({images}) => {
+
+const SearchResults = (this.props.images) => {
 	// return early if there are no images
 	if (images.length === 0) {
 		return <h2>No Images Found!</h2>;
