@@ -3,7 +3,7 @@ import React from 'react';
 
 const SearchResults = ({images}) => {
 	// return early if there are no images
-	if (images.length === 0) {
+	if ([images].length === 0) {
 		return <h2>No Images Found!</h2>;
 	}
 	return <div className="gallery">
