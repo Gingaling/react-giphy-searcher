@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const SearchResults = (this.props.images) => {
+const SearchResults = ({images}) => {
 	// return early if there are no images
-	if (images.length === 0) {
+	if (images === []) {
 		return <h2>No Images Found!</h2>;
 	}
 	return <div className="gallery">
