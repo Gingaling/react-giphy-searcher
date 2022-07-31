@@ -1,9 +1,9 @@
 import React from 'react';
-
+import {images} from '../App.js';
 
 const SearchResults = ({images}) => {
 	// return early if there are no images
-	if (images === []) {
+	if (images.length === 0) {
 		return <h2>No Images Found!</h2>;
 	}
 	return <div className="gallery">
