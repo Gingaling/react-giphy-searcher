@@ -46,12 +46,13 @@ form {
 
 /* Style the input and tell it to grow */
 input {
+  text-align: left;
   background-color: var(--secondary-light);
   border: 2px solid var(--secondary);
   color: var(--white);
   flex-grow: 1;
   font-size: 1.2rem;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1rem;
   width: 100%;
 }
 
@@ -73,6 +74,13 @@ input:hover {
 .form-horizontal {
   align-items: center;
   display: flex;
+}
+
+#logo {
+  padding: 0;
+  float: left;
+  text-align: left;
+  width: 11rem;
 }
 
 /* Add a media query to add more space between

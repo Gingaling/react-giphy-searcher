@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SearchForm from './components/SearchForm.js';
 import SearchResults from './components/SearchResults.js';
-// import SearchHeader from './components/SearchHeader';
+import logo from './magnifying-glass1.png';
+
 
 function App() {
 	const searchOptions = {
@@ -14,7 +15,7 @@ function App() {
 
 	const [images, setImages] = useState([]);
 	const [ searchString, setSearchString ] = useState('');
-	// const [ lastSearch, setLastSearch ] = useState('');
+
 
 	
 	function getImages() {
@@ -43,8 +44,8 @@ function App() {
 	}
 
 	return <div>
-			{/* <SearchHeader lastSearch={lastSearch} /> */}
-			<h1>Giphy Searcher</h1>
+			<img id="logo" src={logo} alt="" />
+			<h1 id="titleHead">Giphy Searcher</h1>
 			<SearchForm handleChange={handleChange} handleSubmit={handleSubmit} searchString={searchString} />
 			<SearchResults images={images} />
 		</div>;
