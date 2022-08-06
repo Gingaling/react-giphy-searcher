@@ -1,4 +1,4 @@
-Care to see this project in action? You are in luck! This project was deployed at: https://brilliant-pothos-b4f8bf.netlify.app.
+Care to see this project in action? You're in luck! This project was deployed at: https://brilliant-pothos-b4f8bf.netlify.app.
 
 # React Giphy Searcher Project
 
